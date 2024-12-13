@@ -1,0 +1,16 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "baseUrl": ".", // Asegúrate de agregar esta línea
+    "paths": {
+      "@components/*": ["src/components/*"], // Corrige la palabra 'componets' a 'components'
+      "@Pages/*": ["src/pages/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@fuctios/*": ["src/JS/*"]
+    }
+  }
+}

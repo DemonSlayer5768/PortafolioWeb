@@ -1,0 +1,36 @@
+---
+import Layout from "@layouts/Layout.astro";
+import SectionContainer from "@components/zSectionContainer.astro";
+import MenuPerfil from "@components/MenuBar";
+import HeroSection from "@components/HeroSection";
+import Experiencia from "@components/Experence";
+import { SkillsSection } from "@components/SkillsSection";
+import Proyectos from "@components/Projects";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+  <main>
+    <SectionContainer id="home">
+      <MenuPerfil />
+      <HeroSection />
+    </SectionContainer>
+
+    <SectionContainer id="experence">
+      <Experiencia />
+    </SectionContainer>
+
+    <SectionContainer id="skills">
+      <SkillsSection />
+    </SectionContainer>
+
+    <SectionContainer id="proyects">
+      <Proyectos />
+    </SectionContainer>
+
+    <SectionContainer id="aboutMe"> Aboutme </SectionContainer>
+    <SectionContainer id="contact"> Contact </SectionContainer>
+  </main>
+</Layout>
