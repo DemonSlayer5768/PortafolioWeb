@@ -2,10 +2,18 @@ import { type Skill, SkillCard } from "@components/Habilidades";
 import { Code, Server, Palette, Globe, Database, Terminal } from "lucide-react";
 
 const skills: Skill[] = [
-  { name: "Frontend", icon: Code, items: ["React", "Vue", "CSS/SASS"] },
-  { name: "Backend", icon: Server, items: ["Node.js", "Express", "Python"] },
-  { name: "Design", icon: Palette, items: ["Figma", "Adobe XD", "Sketch"] },
-  { name: "Web", icon: Globe, items: ["HTML5", "SEO", "Responsive Design"] },
+  {
+    name: "Frontend",
+    icon: Code,
+    items: ["React", "Angular", "Bootstrap", "Tailwind"],
+  },
+  {
+    name: "Backend",
+    icon: Server,
+    items: ["Node.js", "C#", "Python", "PhP", "C++"],
+  },
+  { name: "Design", icon: Palette, items: ["Figma"] },
+  { name: "Web", icon: Globe, items: ["HTML5", "CSS", "Responsive Design"] },
   {
     name: "Database",
     icon: Database,
