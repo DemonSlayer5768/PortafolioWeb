@@ -1,3 +1,4 @@
+import { IoBriefcaseOutline } from "react-icons/io5";
 interface Props {
   title: string;
   company: string;
@@ -27,9 +28,10 @@ export default function Experiencia() {
   return (
     <div className="container mx-auto px-14 py-24">
       <div className="grid gap-12">
-        <h1 className="text-3xl font-bold text-center mb-12 text-white-800">
-          Experiencia
+        <h1 className="text-3xl font-bold text-left mb-12 text-white-800 flex items-center">
+          <IoBriefcaseOutline className="mr-4 text-4xl" /> Experiencia
         </h1>
+
         {experiences.map((job, index) => (
           <div
             key={index}
@@ -60,7 +62,6 @@ export default function Experiencia() {
                 >
                   Saber más{" "}
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     className="w-5 icon icon-tabler icon-tabler-chevron-right"
                     width="24"
                     height="24"

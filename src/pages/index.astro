@@ -1,13 +1,13 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import SectionContainer from "@components/zSectionContainer.astro";
-import MenuPerfil from "@components/MenuBar";
+import MenuPerfil from "@components/Header";
 import HeroSection from "@components/HeroSection";
 import Experiencia from "@components/Experence";
 import { SkillsSection } from "@components/SkillsSection";
 import Proyectos from "@components/Projects";
 import Aboutme from "@components/AboutMe";
-import Contacto from "@components/Contact";
+import Contacto from "@components/Footer";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -15,8 +15,8 @@ import Contacto from "@components/Contact";
 
 <Layout>
   <main>
+    <MenuPerfil />
     <SectionContainer id="home">
-      <MenuPerfil />
       <HeroSection />
     </SectionContainer>
 
@@ -35,7 +35,7 @@ import Contacto from "@components/Contact";
     <SectionContainer id="aboutMe">
       <Aboutme />
     </SectionContainer>
-    <SectionContainer id="contact">
+    <SectionContainer>
       <Contacto />
     </SectionContainer>
   </main>

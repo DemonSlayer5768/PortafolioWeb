@@ -1,5 +1,6 @@
 import { type Skill, SkillCard } from "@components/Habilidades";
 import { Code, Server, Palette, Globe, Database, Terminal } from "lucide-react";
+import { HiOutlineClipboardList } from "react-icons/hi";
 
 const skills: Skill[] = [
   {
@@ -26,9 +27,9 @@ export function SkillsSection() {
   return (
     <section>
       <div className="container mx-auto px-14 py-24">
-        <h2 className="text-3xl font-bold text-center mb-12 text-white-800">
-          Habilidades
-        </h2>
+        <h1 className="text-3xl font-bold text-left mb-12 text-white-800 flex items-center">
+          <HiOutlineClipboardList className="mr-4 text-4xl" /> Habilidades
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill) => (
             <SkillCard key={skill.name} skill={skill} />

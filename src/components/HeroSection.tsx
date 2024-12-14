@@ -1,4 +1,5 @@
 import { Code, Laptop, Sparkles } from "lucide-react";
+import { handleContact, handleDownloadCV } from "@fuctions/fuctions";
 
 export default function HeroSection() {
   return (
@@ -10,16 +11,22 @@ export default function HeroSection() {
               <span className="block">Hola soy, Jonathan</span>
               <span className="block text-blue-400">Software Developer</span>
             </h1>
-            <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+            <p className="mt-3 text-base sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
               Creando elegantes soluciones de complejos problemas apasionado a
               la tenologia y al hacer codigo limpio tambien al usar nuevas
               tecnologias.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-lg text-lg">
-                Mis Proyectos
+              <button
+                className="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-lg text-lg "
+                onClick={handleDownloadCV}
+              >
+                Descargar CV
               </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-slate-900 py-2 px-4 rounded-lg text-lg">
+              <button
+                className="border-2 border-white text-white hover:bg-white hover:text-slate-900 py-2 px-4 rounded-lg text-lg "
+                onClick={handleContact}
+              >
                 Contactame
               </button>
             </div>

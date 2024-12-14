@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { IoCodeSlash } from "react-icons/io5";
 
 const TAGS = {
   NEXT: {
@@ -58,8 +59,8 @@ function LinkButton({
 export default function Proyectos() {
   return (
     <div className="container mx-auto px-14 py-24">
-      <h1 className="text-3xl font-bold text-center mb-12 text-white-800">
-        Proyectos
+      <h1 className="text-3xl font-bold text-left mb-12 text-white-800 flex items-center">
+        <IoCodeSlash className="mr-4 text-4xl" /> Proyectos
       </h1>
       <div className="flex flex-col gap-y-16">
         {PROJECTS.map(({ image, title, description, tags, link, github }) => (

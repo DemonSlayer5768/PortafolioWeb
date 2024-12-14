@@ -10,7 +10,7 @@
       "@components/*": ["src/components/*"], // Corrige la palabra 'componets' a 'components'
       "@Pages/*": ["src/pages/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@fuctios/*": ["src/JS/*"]
+      "@fuctions/*": ["src/JS/*"]
     }
   }
 }
