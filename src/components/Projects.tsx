@@ -21,7 +21,7 @@ const PROJECTS = [
     title: "Pagina Web Streaming",
     description:
       "Pagina de contenido para series y peliculas un chingo de mamadas que debo de pober",
-    link: "https://svgl.vercel.app/",
+    // link: "https://svgl.vercel.app/",
     github: "https://github.com/pheralb/svgl",
     image:
       "https://vsd.mx/_next/image?url=https%3A%2F%2Fadmin.vsd.mx%2Fwp-content%2Fuploads%2F2023%2F11%2Fservicios-streaming.jpg&w=1080&q=75",

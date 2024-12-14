@@ -3,8 +3,8 @@ import { handleContact, handleDownloadCV } from "@fuctions/fuctions";
 
 export default function HeroSection() {
   return (
-    <div className="container mx-auto  py-24">
-      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+    <div className="container mx-auto py-24">
+      <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="text-center lg:text-left lg:w-1/2">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
