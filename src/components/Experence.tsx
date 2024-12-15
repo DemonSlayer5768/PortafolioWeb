@@ -11,15 +11,19 @@ const experiences: Props[] = [
   {
     title: "Software Engineer",
     company: "Coparmex Jal",
-    description: "Modificaciones de interfazces graficas en web y en delphi",
+    description:
+      "Durante mi tiempo en esta empresa, me enfoqué en desarrollar aplicaciones diseñadas para optimizar los procesos y la productividad de los empleados. " +
+      "Además, participé en el mantenimiento y mejora de diversos proyectos Web utilizando múltiples Herramientas de programación," +
+      "así como en la gestión y manipulación de bases de datos.",
+
     date: "2023 - Present",
-    // link: "https://techcorp.com",
+    link: "https://coparmexjal.org.mx/contacto.html",
   },
   {
     title: "Frontend Developer",
-    company: "Design Web",
+    company: "Freelancer",
     description:
-      "Created responsive and user-friendly web designs for various clients.",
+      "por un tiempo me dedique a crear disenios en figma e implementarlos en paginas web con distintos lenguajes y frameworks de programacion como tambien dedique tiempo a ",
     date: "2021 - 2023",
   },
 ];
@@ -46,12 +50,12 @@ export default function Experiencia() {
                 <h4 className="font-semibold text-xl text-gray-600 dark:text-white">
                   {job.company}
                 </h4>
-                <time className="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">
+                <time className="p-0 m-0 text-sm  text-gray-600/80 dark:text-white/80">
                   {job.date}
                 </time>
               </div>
             </div>
-            <div className="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
+            <div className="relative flex flex-col text-left gap-2 pb-4 text-white dark:text-white-600 md:col-span-3">
               <p>{job.description}</p>
               {job.link && (
                 <a

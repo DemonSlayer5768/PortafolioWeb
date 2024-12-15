@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import { changeScroll } from "@fuctions/fuctions"; // Ajusta el path según tu estructura de proyecto
 
 const menuItems = [
   { name: "Inicio", href: "/#home" },
@@ -8,31 +9,35 @@ const menuItems = [
   { name: "Habilidades", href: "/#skills" },
   { name: "Proyectos", href: "/#proyects" },
   { name: "Sobre Mi", href: "/#aboutMe" },
+  { name: "Contactame", href: "jjaimeloza5768@gmail.com" },
 ];
 
 export default function MenuPerfil() {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    changeScroll();
+  }, []);
+
   return (
-    <header className="max-w-5xl mx-auto">
-      <nav className="fixed top-0 items-center z-50   bg-gray-800 rounded-full ">
+    <header>
+      <nav className="fixed z-50 rounded-full mx-auto left-0 right-0 max-w-6xl ">
         <div>
-          <div className="flex items-center justify-between h-16 ">
-            <div className="flex items-center">
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
-                  {menuItems.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="hover:bg-white hover:text-black px-10 py-2 rounded-full text-lg font-medium "
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
+          <div className="fixed z-50 rounded-full mx-auto left-0 right-0 max-w-6xl  flex items-center justify-center h-16">
+            <div className="hidden md:block">
+              <div className="flex items-center space-x-4">
+                {menuItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="hover:bg-white hover:text-black px-10 py-2 rounded-full text-lg font-medium"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
               </div>
             </div>
+
             <div className="md:hidden">
               <button onClick={() => setIsOpen(!isOpen)} aria-expanded="false">
                 {isOpen ? (
@@ -53,7 +58,7 @@ export default function MenuPerfil() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="hover:bg-white hover:text-black px-10 py-2 rounded-full text-lg font-medium "
+                  className="hover:bg-white hover:text-black px-10 py-2 rounded-full text-lg font-medium"
                 >
                   {item.name}
                 </Link>

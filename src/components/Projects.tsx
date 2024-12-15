@@ -31,7 +31,7 @@ const PROJECTS = [
     title: "AdventJS - Retos de programación con JavaScript y TypeScript",
     description:
       "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
+    github: "https://adventjs.dev",
     image: "/projects/adventjs.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
@@ -63,7 +63,7 @@ export default function Proyectos() {
         <IoCodeSlash className="mr-4 text-4xl" /> Proyectos
       </h1>
       <div className="flex flex-col gap-y-16">
-        {PROJECTS.map(({ image, title, description, tags, link, github }) => (
+        {PROJECTS.map(({ image, title, description, tags, github }) => (
           <article
             key={title}
             className="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0"
@@ -105,12 +105,6 @@ export default function Proyectos() {
                     <LinkButton href={github}>
                       <FaGithub className="text-lg" />
                       Code
-                    </LinkButton>
-                  )}
-                  {link && (
-                    <LinkButton href={link}>
-                      <FaLink className="text-lg" />
-                      Preview
                     </LinkButton>
                   )}
                 </footer>
