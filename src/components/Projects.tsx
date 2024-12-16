@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
 import { IoCodeSlash } from "react-icons/io5";
 
 const TAGS = {
@@ -28,9 +29,9 @@ const PROJECTS = [
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "PDF2ExcelComparer",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
+      "Programa que extrae la informacion de archivos PDF o Excel y los compara con datos de un archivo auxiliar para validar los campos que se encuentran",
     github: "https://adventjs.dev",
     image: "/projects/adventjs.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
@@ -59,7 +60,7 @@ function LinkButton({
 export default function Proyectos() {
   return (
     <div className="container mx-auto px-14 py-24">
-      <h1 className="text-3xl font-bold text-left mb-12 text-white-800 flex items-center">
+      <h1 className="text-3xl font-bold text-left mb-12  flex items-center">
         <IoCodeSlash className="mr-4 text-4xl" /> Proyectos
       </h1>
       <div className="flex flex-col gap-y-16">
@@ -80,9 +81,7 @@ export default function Proyectos() {
             </div>
 
             <div className="w-full md:w-1/2 md:max-w-lg">
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
-                {title}
-              </h3>
+              <h3 className="text-2xl font-bold ">{title}</h3>
               <div className="flex flex-wrap mt-2">
                 <ul className="flex flex-row mb-2 gap-x-2">
                   {tags.map((tag, index) => (
@@ -97,9 +96,7 @@ export default function Proyectos() {
                   ))}
                 </ul>
 
-                <div className="mt-2 text-gray-700 dark:text-gray-400">
-                  {description}
-                </div>
+                <div className="mt-3 ">{description}</div>
                 <footer className="flex items-end justify-start mt-4 gap-x-4">
                   {github && (
                     <LinkButton href={github}>

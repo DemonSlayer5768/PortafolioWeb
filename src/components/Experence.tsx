@@ -16,15 +16,17 @@ const experiences: Props[] = [
       "Además, participé en el mantenimiento y mejora de diversos proyectos Web utilizando múltiples Herramientas de programación," +
       "así como en la gestión y manipulación de bases de datos.",
 
-    date: "2023 - Present",
+    date: "2023 - 2024",
     link: "https://coparmexjal.org.mx/contacto.html",
   },
   {
     title: "Frontend Developer",
     company: "Freelancer",
     description:
-      "por un tiempo me dedique a crear disenios en figma e implementarlos en paginas web con distintos lenguajes y frameworks de programacion como tambien dedique tiempo a ",
-    date: "2021 - 2023",
+      "Durante este período, me dediqué a estudiar diversos frameworks de CSS con el objetivo de implementarlos en distintos proyectos. Asimismo, desarrollé" +
+      "habilidades para implementar la lógica necesaria en la creación de funciones, optimizando la interacción de los usuarios. También me enfoqué en el diseño y desarrollo" +
+      "de diversos componentes para páginas web, mejorando la experiencia y el diseño final orientado a los usuarios.",
+    date: "2022 - 2023",
   },
 ];
 
@@ -32,7 +34,7 @@ export default function Experiencia() {
   return (
     <div className="container mx-auto px-14 py-24">
       <div className="grid gap-12">
-        <h1 className="text-3xl font-bold text-left mb-12 text-white-800 flex items-center">
+        <h1 className="text-3xl font-bold text-left mb-12 flex items-center">
           <IoBriefcaseOutline className="mr-4 text-4xl" /> Experiencia
         </h1>
 
@@ -47,15 +49,13 @@ export default function Experiencia() {
                   &bull;
                 </span>
                 <h3 className="text-xl font-bold text-blue-400">{job.title}</h3>
-                <h4 className="font-semibold text-xl text-gray-600 dark:text-white">
-                  {job.company}
-                </h4>
-                <time className="p-0 m-0 text-sm  text-gray-600/80 dark:text-white/80">
+                <h4 className="font-semibold text-xl ">{job.company}</h4>
+                <time className="p-0 m-0 text-sm  text-gray-600/800">
                   {job.date}
                 </time>
               </div>
             </div>
-            <div className="relative flex flex-col text-left gap-2 pb-4 text-white dark:text-white-600 md:col-span-3">
+            <div className="relative flex flex-col text-left gap-2 pb-4  dark:text-white-600 md:col-span-3">
               <p>{job.description}</p>
               {job.link && (
                 <a

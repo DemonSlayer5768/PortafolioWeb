@@ -6,7 +6,7 @@ const skills: Skill[] = [
   {
     name: "Frontend",
     icon: Code,
-    items: ["React", "Angular", "Bootstrap", "Tailwind"],
+    items: ["React", "Bootstrap", "Tailwind"],
   },
   {
     name: "Backend",
@@ -18,9 +18,9 @@ const skills: Skill[] = [
   {
     name: "Database",
     icon: Database,
-    items: ["MongoDB", "MySQL", "PostgreSQL"],
+    items: ["MongoDB", "MySQL"],
   },
-  { name: "Tools", icon: Terminal, items: ["Git", "Docker", "AWS"] },
+  { name: "Tools", icon: Terminal, items: ["Git"] },
 ];
 
 export function SkillsSection() {

@@ -34,7 +34,7 @@ export default function HeroSection() {
         <div className="lg:w-1/2 relative">
           <div className="relative mx-auto w-64 h-64 sm:w-80 sm:h-80 lg:ml-40">
             <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/18716098-icone-de-gradiente-de-linha-do-programador-vetor.jpg"
+              src="src\Imgs\FotoMe.jpg"
               alt="JonaPhoto"
               width="350"
               height="350"

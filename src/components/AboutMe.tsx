@@ -2,46 +2,50 @@ import { IoPerson } from "react-icons/io5";
 
 export default function AboutMe() {
   return (
-    <div className="container mx-auto py-24 px-6">
+    <div className="container mx-auto px-14 py-24">
       <h1 className="text-3xl font-bold text-left mb-12 text-white-800 flex items-center">
         <IoPerson className="mr-4 text-4xl" /> Sobre mi
       </h1>
 
       {/* Texto */}
-      <article className="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
-        <div className="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
+      <article className="flex flex-col items-center justify-center gap-8 md:flex-row">
+        <div className="[&>p]:mb-4 [&>p>strong]:text-blue-400 dark:[&>p>strong]:text-blue-400 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
           <p>
-            Me llamo Miguel Ángel pero mis amigos me llaman midu. Empecé en la
-            programación con un Amstrad, tenía 10 años. Actualmente estoy{" "}
-            <strong>liderando equipos de desarrollo en multinacionales</strong>.
+            Me llamo Jonathan Silvestre Jaime Loza . Empecé en la programación a
+            los 16 años como una pasion al entender como funcionaban las cosas,
+            Actualmente estoy,{" "}
+            <strong>
+              Terminando la universidad en la carrera de ingenieria en
+              computacion en CUCEI
+            </strong>
+            .
           </p>
 
           <p>
-            Algunos de mis éxitos incluyen{" "}
+            Algunos de mis éxitos incluyen,{" "}
             <strong>
-              colaborar con Mozilla para el desarrollo de las primeras apps en
-              su sistema FirefoxOS
+              Colaborar como auxiliar de programacion en Coparmex Jalisco en
+              desarrollar aplicaciones diseñadas para optimizar los procesos y
+              la productividad de los empleados. Además participé en el
+              mantenimiento y mejora de diversos proyectos Web.
             </strong>
-            . Aunque hoy está desaparecido, fue un gran avance en el mundo del
-            desarrollo web.
           </p>
 
           <p>
-            Como creador de contenido,{" "}
+            Como Frontend Developer,{" "}
             <strong>
-              cuento con el canal de habla hispana más visto del mundo en la
-              categoría de{" "}
-              <em className="italic">Software & Game Development</em> en Twitch
+              Espero poder mejorar mis diseños que sean actractivos para los
+              usuarios que lo van a visualizar.{" "}
             </strong>
-            . Mi objetivo es mejorar la empleabilidad de la comunidad hispana y
-            el acceso a contenido de calidad.
+            Mi objetivo es poder crear herramientas que sean faciles de manejar
+            por usuarios finales.
           </p>
         </div>
 
         <img
           width="200"
           height="200"
-          src="https://caricom.org/wp-content/uploads/Floyd-Morris-Remake-1024x879-1.jpg"
+          src="src\Imgs\FotoMe3.jpg"
           className="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
           style={{ objectPosition: "50% 50%" }}
         />
