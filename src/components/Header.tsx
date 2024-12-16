@@ -8,7 +8,7 @@ const menuItems = [
   { name: "Habilidades", href: "/#skills" },
   { name: "Proyectos", href: "/#proyects" },
   { name: "Sobre Mi", href: "/#aboutMe" },
-  { name: "Contactame", href: "maito:jjaimeloza5768@gmail.com" },
+  { name: "Contactame", href: "mailto:jjaimeloza5768@gmail.com" },
 ];
 
 export default function MenuPerfil() {
