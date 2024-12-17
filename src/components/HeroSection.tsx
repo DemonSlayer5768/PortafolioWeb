@@ -20,7 +20,7 @@ export default function HeroSection() {
             <strong>ingenieria en computacion</strong> en el Centro
             Universitario de Ciencias Exactas e Ingenierías .
           </p>
-          <div className="flex items-center">
+          <div className="relative inline-flex overflow-hidden rounded-full p-[1px]">
             <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51A7E8_0%,#2154AE_50%,#51A7E8_100%)]"></span>
               <p className="flex items-center justify-center w-full px-4 py-2 text-lg text-blue-800 bg-blue-100 rounded-full  dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl hover:bg-white hover:text-slate-900 transition-all">
