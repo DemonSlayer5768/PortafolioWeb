@@ -1,7 +1,6 @@
 ---
-import SunIcon from "@components/Sun.astro";
-import MoonIcon from "@components/Moon.astro";
-import SystemIcon from "@components/System.astro";
+import { FaSun, FaMoon } from "react-icons/fa";
+import { MdComputer } from "react-icons/md";
 
 const THEMES = ["Light", "Dark", "System"];
 ---
@@ -13,14 +12,14 @@ const THEMES = ["Light", "Dark", "System"];
     class="appearance-none border-none flex hover:scale-125 transition"
   >
     <span class="sr-only">Elige el tema</span>
-    <SunIcon id="light" class="theme-toggle-icon size-5 transition-all" />
-    <MoonIcon
+    <FaSun id="light" className="theme-toggle-icon size-5 transition-all" />
+    <FaMoon
       id="dark"
-      class="theme-toggle-icon absolute size-5 transition-all"
+      className="theme-toggle-icon absolute size-5 transition-all"
     />
-    <SystemIcon
+    <MdComputer
       id="system"
-      class="theme-toggle-icon absolute size-5 transition-all"
+      className="theme-toggle-icon absolute size-5 transition-all"
     />
   </button>
   <div

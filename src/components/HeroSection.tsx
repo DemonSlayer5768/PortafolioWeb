@@ -1,4 +1,6 @@
 import { Code, Laptop, Sparkles } from "lucide-react";
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
 import { handleContact, handleDownloadCV } from "@fuctions/fuctions";
 
 export default function HeroSection() {
@@ -13,11 +15,36 @@ export default function HeroSection() {
             </span>
           </h1>
 
-          <p className="mt-3 text-base sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-            Habilidad para trabajar con diversos lenguajes de programación,
-            bases de datos y herramientas de desarrollo, asegurando calidad,
-            eficiencia y funcionalidad en los proyectos.
+          <p className="mt-6 text-xl text-gray-800 dark:[&>strong]:text-blue-500 [&>strong]:text-blue-500 [&>strong]:font-semibold dark:text-gray-300 mb-5">
+            Actulmente me encuentro cursando la carrera de{" "}
+            <strong>ingenieria en computacion</strong> en el Centro
+            Universitario de Ciencias Exactas e Ingenierías .
           </p>
+          <div className="flex items-center">
+            <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51A7E8_0%,#2154AE_50%,#51A7E8_100%)]"></span>
+              <p className="flex items-center justify-center w-full px-4 py-2 text-lg text-blue-800 bg-blue-100 rounded-full  dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl hover:bg-white hover:text-slate-900 transition-all">
+                Disponible para Trabajar
+              </p>
+            </span>
+            <a
+              className="hover:text-blue-500 py-2 px-4 rounded-lg text-lg"
+              href="https://www.linkedin.com/in/jonathan-silvestre-jaime-loza-572795194/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CiLinkedin className="text-4xl" />
+            </a>
+            <a
+              className="hover:text-blue-500 py-2 px-4 rounded-lg text-lg"
+              href="https://github.com/DemonSlayer5768"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="text-4xl" />
+            </a>
+          </div>
+
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <button
               className="bg-blue-500  hover:bg-blue-600 py-2 px-4 rounded-lg text-lg "
