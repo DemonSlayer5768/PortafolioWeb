@@ -1,8 +1,7 @@
 // functions.js
-console.log("si entra a fuctions");
 
+// Funcion para mandar correo
 export const handleContact = () => {
-  console.log("presionado");
   const email = "jjaimeloza5768@gmail.com";
 
   const subject = "Contacto desde la página web";
@@ -15,7 +14,7 @@ export const handleContact = () => {
 
 // Funcion para descargar el CV como PDF
 export const handleDownloadCV = () => {
-  console.log("presionado");
+  // console.log("presionado");
 
   const link = document.createElement("a");
   link.href = "/ruta/del/archivo/CV.pdf";
@@ -23,29 +22,37 @@ export const handleDownloadCV = () => {
   link.click();
 };
 
-//Funcion para cambiar el bg dela nav-bar
-export const changeScroll = () => {
-  console.log("si baja");
+// //Funcion para cambiar el bg dela nav-bar
+// export const changeScroll = () => {
+//   const navbar = document.querySelector("nav");
+//   const sections = document.querySelectorAll("section[id]");
+//   const options = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 0.7,
+//   };
 
-  const navbar = document.querySelector("nav");
-  const sections = document.querySelectorAll("section[id]");
-  const options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.7,
-  };
+//   const observer = new IntersectionObserver((entries) => {
+//     let isHomeVisible = false;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        navbar?.classList.add("bg-gray-800");
-      } else {
-        navbar?.classList.remove("bg-gray-800");
-      }
-    });
-  }, options);
+//     entries.forEach((entry) => {
+//       const sectionId = entry.target.getAttribute("id");
 
-  sections.forEach((section) => {
-    observer.observe(section);
-  });
-};
+//       // Verifica si la sección "home" está visible
+//       if (entry.isIntersecting && sectionId === "#home") {
+//         isHomeVisible = true;
+//       }
+//     });
+
+//     // Agrega o elimina la clase bg-gray-800 dependiendo de si "home" es visible
+//     if (isHomeVisible) {
+//       navbar?.classList.remove("bg-gray-800");
+//     } else {
+//       navbar?.classList.add("bg-gray-800");
+//     }
+//   }, options);
+
+//   sections.forEach((section) => {
+//     observer.observe(section);
+//   });
+// };

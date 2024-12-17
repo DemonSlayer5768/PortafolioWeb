@@ -6,9 +6,11 @@ export default function HeroSection() {
     <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-            <span className="block">Hola soy, Jonathan</span>
-            <span className="block text-blue-400">Software Developer</span>
+          <h1 className="text-4xl font-bold tracking-tight sm:text-4xl ">
+            <span className="block md:text-6xl">Hola soy, Jonathan</span>
+            <span className="block text-blue-400 md:text-5xl mt-3">
+              Software Developer
+            </span>
           </h1>
 
           <p className="mt-3 text-base sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
@@ -18,13 +20,13 @@ export default function HeroSection() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <button
-              className="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-lg text-lg "
+              className="bg-blue-500  hover:bg-blue-600 py-2 px-4 rounded-lg text-lg "
               onClick={handleDownloadCV}
             >
               Descargar CV
             </button>
             <button
-              className="border-2 border-white text-white hover:bg-white hover:text-slate-900 py-2 px-4 rounded-lg text-lg "
+              className="border-2   hover:bg-white hover:text-slate-900 py-2 px-4 rounded-lg text-lg "
               onClick={handleContact}
             >
               Contactame
