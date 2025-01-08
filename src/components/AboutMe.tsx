@@ -12,7 +12,7 @@ export default function AboutMe() {
         <div className="[&>p]:mb-4 [&>p>strong]:text-blue-400 dark:[&>p>strong]:text-blue-400 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
           <p>
             Me llamo Jonathan Silvestre Jaime Loza . Empecé en la programación a
-            los 16 años como una pasion al entender como funcionaban las cosas,
+            los 18 años como una pasion al entender como funcionaban las cosas,
             Actualmente estoy,{" "}
             <strong>
               Terminando la universidad en la carrera de ingenieria en

@@ -5,9 +5,9 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "baseUrl": ".", // Asegúrate de agregar esta línea
+    "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"], // Corrige la palabra 'componets' a 'components'
+      "@components/*": ["src/components/*"],
       "@Pages/*": ["src/pages/*"],
       "@layouts/*": ["src/layouts/*"],
       "@fuctions/*": ["src/JS/*"]
