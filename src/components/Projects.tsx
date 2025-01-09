@@ -1,87 +1,141 @@
-import React from "react";
-import { FaGithub, FaLink } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaGithub, FaPython } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io5";
 import { IoCodeSlash } from "react-icons/io5";
+import { IoLogoJavascript } from "react-icons/io5";
 
+const imgsProyecs: { [key: string]: { src: string; alt: string }[] } = {
+  itemsImgsProyect1: [
+    { src: "../src/Imgs/imgCineFlare1.jpg", alt: "img1" },
+    { src: "../src/Imgs/imgCineFlare2.jpg", alt: "img2" },
+    { src: "../src/Imgs/imgCineFlare3.jpg", alt: "img3" },
+    { src: "../src/Imgs/imgCineFlare4.jpg", alt: "img4" },
+  ],
+  itemsImgsProyect2: [
+    { src: "../src/Imgs/imgPDF2Ex1.jpg", alt: "imgP1" },
+    { src: "../src/Imgs/imgPDF2Ex2.jpg", alt: "imgP2" },
+    { src: "../src/Imgs/imgPDF2Ex3.jpg", alt: "imgP3" },
+    { src: "../src/Imgs/imgPDF2Ex4.jpg", alt: "imgP4" },
+    { src: "../src/Imgs/imgPDF2Ex5.jpg", alt: "imgP5" },
+  ],
+};
 const TAGS = {
   NEXT: {
     name: "Next.js",
-    class: "bg-[#003159] text-white",
+    class: "bg-[#4CAF50] text-white",
     icon: SiNextdotjs,
   },
   TAILWIND: {
     name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
+    class: "bg-[#1A73E8] text-white",
     icon: SiTailwindcss,
   },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#e6cc00] text-white",
+    icon: IoLogoJavascript,
+  },
+  PYTHON: {
+    name: "Python",
+    class: "bg-[#3776AB] text-white",
+    icon: FaPython,
+  },
 };
-
 const PROJECTS = [
   {
     title: "Pagina Web Streaming",
     description:
-      "Pagina de contenido para series y peliculas un chingo de mamadas que debo de pober",
-    // link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image:
-      "https://vsd.mx/_next/image?url=https%3A%2F%2Fadmin.vsd.mx%2Fwp-content%2Fuploads%2F2023%2F11%2Fservicios-streaming.jpg&w=1080&q=75",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Proyecto de una página web de streaming de películas y series, con un diseño moderno y atractivo. " +
+      "Desarrollado con Next.js y Tailwind CSS." +
+      "para el BackEnd se utilizo JavaScrip y para la base de datos use MySQL.",
+    github: "https://github.com/DemonSlayer5768/ProyectoWeb",
+    projectKey: "itemsImgsProyect1",
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.JAVASCRIPT],
   },
   {
     title: "PDF2ExcelComparer",
     description:
-      "Programa que extrae la informacion de archivos PDF o Excel y los compara con datos de un archivo auxiliar para validar los campos que se encuentran",
-    github: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "El programa es una herramienta que extrae y compara datos de PDFs y Excel, ideal para contadores al validar estados de " +
+      "cuenta contra archivos auxiliares. Facilita la detección de discrepancias, incluso en PDFs protegidos, " +
+      "agilizando el proceso de verificación.",
+    github: "https://github.com/DemonSlayer5768/PDF2ExcelComparer",
+    projectKey: "itemsImgsProyect2",
+    tags: [TAGS.PYTHON],
   },
 ];
 
-function LinkButton({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-x-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded hover:bg-blue-700"
-    >
-      {children}
-    </a>
-  );
-}
-
 export default function Proyectos() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentProject] = useState(PROJECTS[0].projectKey);
+
+  const projectsImages = imgsProyecs[currentProject];
+
+  // Cambiar la imagen automáticamente cada 4 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNextImage();
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
+  const handleNextImage = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === projectsImages.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  // const handlePrevImage = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === 0 ? projectsImages.length - 1 : prevIndex - 1
+  //   );
+  // };
+
   return (
     <div className="container mx-auto px-14 py-24">
-      <h1 className="text-3xl font-bold text-left mb-12  flex items-center">
+      <h1 className="text-3xl font-bold text-left mb-12 flex items-center">
         <IoCodeSlash className="mr-4 text-4xl" /> Proyectos
       </h1>
       <div className="flex flex-col gap-y-16">
-        {PROJECTS.map(({ image, title, description, tags, github }) => (
+        {PROJECTS.map(({ title, description, tags, github, projectKey }) => (
           <article
             key={title}
             className="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0"
           >
-            <div className="w-full md:w-1/2">
-              <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-                <img
-                  alt={title}
-                  className="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
-                  loading="lazy"
-                  src={image}
-                />
+            <div className="relative w-full md:w-1/2">
+              <div className="overflow-hidden rounded-xl shadow-lg">
+                <div className="relative flex w-full h-64 transition-transform duration-700 ease-in-out transform">
+                  {projectsImages.map((img, index) => (
+                    <img
+                      key={img.alt}
+                      src={imgsProyecs[projectKey][currentIndex].src}
+                      alt={img.alt}
+                      className={`absolute top-0 left-0 w-full h-full object-cover transform transition-transform duration-700  ${
+                        index === currentIndex
+                          ? "translate-x-0"
+                          : index > currentIndex
+                          ? "translate-x-full"
+                          : "-translate-x-full"
+                      }`}
+                    />
+                  ))}
+                </div>
+                {/* <button
+                  className="absolute left-0 z-10 px-4 py-2 text-white bg-black/50 hover:bg-black/75"
+                  onClick={handlePrevImage}
+                >
+                  <FaChevronLeft />
+                </button>
+                <button
+                  className="absolute right-0 z-10 px-4 py-2 text-white bg-black/50 hover:bg-black/75"
+                  onClick={handleNextImage}
+                >
+                  <FaChevronRight />
+                </button> */}
               </div>
             </div>
 
             <div className="w-full md:w-1/2 md:max-w-lg">
-              <h3 className="text-2xl font-bold ">{title}</h3>
+              <h3 className="text-2xl font-bold">{title}</h3>
               <div className="flex flex-wrap mt-2">
                 <ul className="flex flex-row mb-2 gap-x-2">
                   {tags.map((tag, index) => (
@@ -95,14 +149,18 @@ export default function Proyectos() {
                     </li>
                   ))}
                 </ul>
-
-                <div className="mt-3 ">{description}</div>
+                <div className="mt-3 text-justify">{description}</div>
                 <footer className="flex items-end justify-start mt-4 gap-x-4">
                   {github && (
-                    <LinkButton href={github}>
+                    <a
+                      href={github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-x-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded hover:bg-blue-700"
+                    >
                       <FaGithub className="text-lg" />
                       Code
-                    </LinkButton>
+                    </a>
                   )}
                 </footer>
               </div>

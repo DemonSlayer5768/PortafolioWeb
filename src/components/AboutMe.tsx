@@ -11,9 +11,8 @@ export default function AboutMe() {
       <article className="flex flex-col items-center justify-center gap-8 md:flex-row">
         <div className="[&>p]:mb-4 [&>p>strong]:text-blue-400 dark:[&>p>strong]:text-blue-400 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
           <p>
-            Me llamo Jonathan Silvestre Jaime Loza . Empecé en la programación a
-            los 18 años como una pasion al entender como funcionaban las cosas,
-            Actualmente estoy,{" "}
+            Mi nombre es Jonathan Silvestre Jaime Loza , mi pasatiempos
+            favoritos son escuchar musica y ver series Actualmente estoy,{" "}
             <strong>
               Terminando la universidad en la carrera de ingenieria en
               computacion en CUCEI
@@ -22,7 +21,7 @@ export default function AboutMe() {
           </p>
 
           <p>
-            Algunos de mis éxitos incluyen,{" "}
+            Algunas de mis experiencias fue ,{" "}
             <strong>
               Colaborar como auxiliar de programacion en Coparmex Jalisco en
               desarrollar aplicaciones diseñadas para optimizar los procesos y
