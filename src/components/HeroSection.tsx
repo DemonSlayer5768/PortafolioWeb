@@ -2,6 +2,7 @@ import { Code, Laptop, Sparkles } from "lucide-react";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { handleContact, handleDownloadCV } from "@fuctions/fuctions";
+const FotoHero = "/images/FotoMe.jpg";
 
 export default function HeroSection() {
   return (
@@ -63,7 +64,7 @@ export default function HeroSection() {
         <div className="lg:w-1/2 relative">
           <div className="relative mx-auto w-64 h-64 sm:w-80 sm:h-80 lg:ml-40">
             <img
-              src="src\Imgs\FotoMe.jpg"
+              src={FotoHero}
               alt="JonaPhoto"
               width="350"
               height="350"

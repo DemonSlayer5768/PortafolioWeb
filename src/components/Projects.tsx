@@ -6,17 +6,17 @@ import { IoLogoJavascript } from "react-icons/io5";
 
 const imgsProyecs: { [key: string]: { src: string; alt: string }[] } = {
   itemsImgsProyect1: [
-    { src: "../src/Imgs/imgCineFlare1.jpg", alt: "img1" },
-    { src: "../src/Imgs/imgCineFlare2.jpg", alt: "img2" },
-    { src: "../src/Imgs/imgCineFlare3.jpg", alt: "img3" },
-    { src: "../src/Imgs/imgCineFlare4.jpg", alt: "img4" },
+    { src: "/images/imgCineFlare1.jpg", alt: "img1" },
+    { src: "/images/imgCineFlare2.jpg", alt: "img2" },
+    { src: "/images/imgCineFlare3.jpg", alt: "img3" },
+    { src: "/images/imgCineFlare4.jpg", alt: "img4" },
   ],
   itemsImgsProyect2: [
-    { src: "../src/Imgs/imgPDF2Ex1.jpg", alt: "imgP1" },
-    { src: "../src/Imgs/imgPDF2Ex2.jpg", alt: "imgP2" },
-    { src: "../src/Imgs/imgPDF2Ex3.jpg", alt: "imgP3" },
-    { src: "../src/Imgs/imgPDF2Ex4.jpg", alt: "imgP4" },
-    { src: "../src/Imgs/imgPDF2Ex5.jpg", alt: "imgP5" },
+    { src: "/images/imgPDF2Ex1.jpg", alt: "imgP1" },
+    { src: "/images/imgPDF2Ex2.jpg", alt: "imgP2" },
+    { src: "/images/imgPDF2Ex3.jpg", alt: "imgP3" },
+    { src: "/images/imgPDF2Ex4.jpg", alt: "imgP4" },
+    { src: "/images/imgPDF2Ex5.jpg", alt: "imgP5" },
   ],
 };
 const TAGS = {
