@@ -183,13 +183,11 @@ const N = () => {
   },
   C = () => {
     const t = document.createElement("a");
-    (t.href = "dist/files/JONATHAN-CV.pdf"),
+    (t.href = "../public/files/JONATHAN-CV.pdf"),
       (t.download = "CV_Jonathan.pdf"),
       t.click();
   },
-  A = "dist/images/FotoMe.jpg";
-//   dist\images
-
+  A = "../public/images/FotoMe.jpg";
 function _() {
   return e.jsx("div", {
     className: "relative px-4 py-16 sm:px-6 sm:py-24 lg:px-8",

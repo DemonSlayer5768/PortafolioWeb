@@ -1,3 +1,5 @@
+console.log("si entro a js client");
+
 const b = "data-astro-transition-persist";
 function J(e) {
   for (const t of document.scripts)

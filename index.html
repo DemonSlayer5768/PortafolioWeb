@@ -13,8 +13,7 @@
       type="module"
       src="_astro/ClientRouter.astro_astro_type_script_index_0_lang.BScVxmeO.js"
     ></script>
-    <
-    <link rel="stylesheet" href="_astro\index.DZQ1wmlA.css" />
+    <link rel="stylesheet" href="_astro/index.DZQ1wmlA.css" />
   </head>
   <body class="relative text-black dark:text-white">
     <div
@@ -492,15 +491,20 @@
           <astro-island
             uid="288hzw"
             prefix="r0"
-            component-url="/_astro/HeroSection.Ieocgi2Q.js"
+            component-url="_astro/HeroSection.Ieocgi2Q.js"
             component-export="default"
-            renderer-url="/_astro/client.Dzk-kzoB.js"
+            renderer-url="_astro/client.Dzk-kzoB.js"
             props="{}"
             ssr
             client="load"
             opts='{"name":"HeroSection","value":true}'
             await-children
-            ><link rel="preload" as="image" href="/dist/images/FotoMe.jpg" />
+            ><link
+              rel="preload"
+              as="image"
+              href="../public/images/FotoMe.jpg"
+            />
+            <!-- public\images\FotoMe.jpg -->
             <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
               <div
                 class="flex flex-col lg:flex-row items-center justify-between gap-12"
@@ -602,7 +606,7 @@
                     class="relative mx-auto w-64 h-64 sm:w-80 sm:h-80 lg:ml-40"
                   >
                     <img
-                      src="/dist/images/FotoMe.jpg"
+                      src="../public/images/FotoMe.jpg"
                       alt="JonaPhoto"
                       width="350"
                       height="350"
@@ -1309,12 +1313,13 @@
           class="section undefined scroll-m-10 w-full mx-auto container lg:max-w-6xl md:max-w-6xl"
         >
           <section>
+            <!-- <my-island component-url="/_astro/MyComponent.Cgg_6W91.js"></my-island> -->
             <astro-island
               uid="Z1uELTz"
               prefix="r3"
-              component-url="/_astro/Projects.Cgg_6W91.js"
+              component-url="_astro/Projects.Cgg_6W91.js"
               component-export="default"
-              renderer-url="/_astro/client.Dzk-kzoB.js"
+              renderer-url="_astro/client.Dzk-kzoB.js"
               props="{}"
               ssr
               client="load"
@@ -1323,11 +1328,11 @@
               ><link
                 rel="preload"
                 as="image"
-                href="/dist/images/imgCineFlare1.jpg"
+                href="../public/images/imgCineFlare1.jpg"
               /><link
                 rel="preload"
                 as="image"
-                href="/dist/images/imgPDF2Ex1.jpg"
+                href="../public/images/imgPDF2Ex1.jpg"
               />
               <div class="container mx-auto px-14 py-24">
                 <h1
@@ -1359,19 +1364,19 @@
                           class="relative flex w-full h-64 transition-transform duration-700 ease-in-out transform"
                         >
                           <img
-                            src="/dist/images/imgCineFlare1.jpg"
+                            src="../public/images/imgCineFlare1.jpg"
                             alt="img1"
                             class="absolute top-0 left-0 w-full h-full object-cover transform transition-transform duration-700 translate-x-0"
                           /><img
-                            src="/dist/images/imgCineFlare1.jpg"
+                            src="../public/images/imgCineFlare1.jpg"
                             alt="img2"
                             class="absolute top-0 left-0 w-full h-full object-cover transform transition-transform duration-700 translate-x-full"
                           /><img
-                            src="/dist/images/imgCineFlare1.jpg"
+                            src="../public/images/imgCineFlare1.jpg"
                             alt="img3"
                             class="absolute top-0 left-0 w-full h-full object-cover transform transition-transform duration-700 translate-x-full"
                           /><img
-                            src="/dist/images/imgCineFlare1.jpg"
+                            src="../public/images/imgCineFlare1.jpg"
                             alt="img4"
                             class="absolute top-0 left-0 w-full h-full object-cover transform transition-transform duration-700 translate-x-full"
                           />
@@ -1485,19 +1490,19 @@
                           class="relative flex w-full h-64 transition-transform duration-700 ease-in-out transform"
                         >
                           <img
-                            src="/dist/images/imgPDF2Ex1.jpg"
+                            src="../public/images/imgPDF2Ex1.jpg"
                             alt="img1"
                             class="absolute top-0 left-0 w-full h-full object-cover transform transition-transform duration-700 translate-x-0"
                           /><img
-                            src="/dist/images/imgPDF2Ex1.jpg"
+                            src="../public/images/imgPDF2Ex1.jpg"
                             alt="img2"
                             class="absolute top-0 left-0 w-full h-full object-cover transform transition-transform duration-700 translate-x-full"
                           /><img
-                            src="/dist/images/imgPDF2Ex1.jpg"
+                            src="../public/images/imgPDF2Ex1.jpg"
                             alt="img3"
                             class="absolute top-0 left-0 w-full h-full object-cover transform transition-transform duration-700 translate-x-full"
                           /><img
-                            src="/dist/images/imgPDF2Ex1.jpg"
+                            src="../public/images/imgPDF2Ex1.jpg"
                             alt="img4"
                             class="absolute top-0 left-0 w-full h-full object-cover transform transition-transform duration-700 translate-x-full"
                           />
@@ -1565,8 +1570,7 @@
                   </article>
                 </div>
               </div>
-              <!--astro:end--></astro-island
-            >
+            </astro-island>
           </section>
         </section>
         <section
@@ -1575,7 +1579,11 @@
           class="section undefined scroll-m-10 w-full mx-auto container lg:max-w-6xl md:max-w-6xl"
         >
           <section>
-            <link rel="preload" as="image" href="/dist/images/FotoMe3.jpg" />
+            <link
+              rel="preload"
+              as="image"
+              href="../public/images/FotoMe3.jpg"
+            />
             <div class="container mx-auto px-14 py-24">
               <h1
                 class="text-3xl font-bold text-left mb-12 text-white-800 flex items-center"
@@ -1633,7 +1641,7 @@
                 <img
                   width="200"
                   height="200"
-                  src="/dist/images/FotoMe3.jpg"
+                  src="../public/images/FotoMe3.jpg"
                   class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
                   style="object-position: 50% 50%"
                 />

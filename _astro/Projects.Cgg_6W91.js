@@ -1,5 +1,7 @@
+console.log("si entro a js proyects");
 import { G as c, j as e, F as j, a as v } from "./index.D-Byke-7.js";
 import { r as i } from "./index.0zUCkS4B.js";
+
 function P(a) {
   return c({
     tag: "svg",
@@ -62,17 +64,17 @@ function w(a) {
 }
 const m = {
     itemsImgsProyect1: [
-      { src: "dist//images/imgCineFlare1.jpg", alt: "img1" },
-      { src: "/dist/images/imgCineFlare2.jpg", alt: "img2" },
-      { src: "/dist/images/imgCineFlare3.jpg", alt: "img3" },
-      { src: "/dist/images/imgCineFlare4.jpg", alt: "img4" },
+      { src: "../public/images/imgCineFlare1.jpg", alt: "img1" },
+      { src: "../public/images/imgCineFlare2.jpg", alt: "img2" },
+      { src: "../public/images/imgCineFlare3.jpg", alt: "img3" },
+      { src: "../public/images/imgCineFlare4.jpg", alt: "img4" },
     ],
     itemsImgsProyect2: [
-      { src: "/dist/images/imgPDF2Ex1.jpg", alt: "imgP1" },
-      { src: "/dist/images/imgPDF2Ex2.jpg", alt: "imgP2" },
-      { src: "/dist/images/imgPDF2Ex3.jpg", alt: "imgP3" },
-      { src: "/dist/images/imgPDF2Ex4.jpg", alt: "imgP4" },
-      { src: "/dist/images/imgPDF2Ex5.jpg", alt: "imgP5" },
+      { src: "../public/images/imgPDF2Ex1.jpg", alt: "imgP1" },
+      { src: "../public/images/imgPDF2Ex2.jpg", alt: "imgP2" },
+      { src: "../public/images/imgPDF2Ex3.jpg", alt: "imgP3" },
+      { src: "../public/images/imgPDF2Ex4.jpg", alt: "imgP4" },
+      { src: "../public/images/imgPDF2Ex5.jpg", alt: "imgP5" },
     ],
   },
   r = {

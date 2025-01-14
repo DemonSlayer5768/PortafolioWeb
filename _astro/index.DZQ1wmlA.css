@@ -216,15 +216,10 @@ button,
 input:where([type="button"]),
 input:where([type="reset"]),
 input:where([type="submit"]) {
-  -webkit-appearance: button; /* For WebKit browsers (e.g., Safari) */
-  appearance: button; /* Standard property for other browsers */
+  -webkit-appearance: button;
   background-color: transparent;
   background-image: none;
-  border: none; /* Optional: Removes default borders for consistency */
-  padding: 0; /* Optional: Removes padding for consistency */
-  font: inherit; /* Optional: Inherit font from parent */
 }
-
 :-moz-focusring {
   outline: auto;
 }
@@ -239,7 +234,7 @@ progress {
   height: auto;
 }
 [type="search"] {
-  /* -webkit-appearance: textfield; */
+  -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 ::-webkit-search-decoration {
@@ -312,7 +307,7 @@ audio,
 iframe,
 embed,
 object {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
 }
 img,
