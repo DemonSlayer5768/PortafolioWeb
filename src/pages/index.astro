@@ -23,16 +23,15 @@ import SpeedInsights from "@vercel/speed-insights/astro";
         </section>
       </SectionContainer>
 
-      <SectionContainer id="skills">
-        <section>
-          <SkillsSection />
-        </section>
-      </SectionContainer>
-
       <SectionContainer id="proyects">
         <section>
           <Proyectos client:load />
         </section>
+        <SectionContainer id="skills">
+          <section>
+            <SkillsSection />
+          </section>
+        </SectionContainer>
       </SectionContainer>
 
       <SectionContainer id="aboutMe">

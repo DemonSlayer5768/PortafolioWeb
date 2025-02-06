@@ -45,3 +45,7 @@ LinkedIn: https://www.linkedin.com/in/jonathan-silvestre-jaime-loza-572795194/
 GitHub: https://github.com/DemonSlayer5768
 📝 Licencia
 Este portafolio está creado para mostrar mi trabajo y aprendizaje. Puedes inspirarte, pero no lo utilices como propio. 😊
+
+// "@astrojs/react": "^4.2.0",
+// "@astrojs/tailwind": "^5.1.5",
+// "@astrojs/vercel": "^8.0.4",
