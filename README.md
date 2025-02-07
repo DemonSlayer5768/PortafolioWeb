@@ -48,4 +48,8 @@ Este portafolio está creado para mostrar mi trabajo y aprendizaje. Puedes inspi
 
 // "@astrojs/react": "^4.2.0",
 // "@astrojs/tailwind": "^5.1.5",
+// "@astrojs/vercel": "^8.0.4",
+
+// "@astrojs/react": "^4.2.0",
+// "@astrojs/tailwind": "^5.1.5",
 // "@astrojs/vercel": "^8.0.4",cls
