@@ -13,14 +13,14 @@ const navItems = [
     url: "/#experence",
   },
   {
-    title: "Habilidades",
-    label: "habilidades",
-    url: "/#skills",
-  },
-  {
     title: "Proyectos",
     label: "proyectos",
     url: "/#proyects",
+  },
+  {
+    title: "Habilidades",
+    label: "habilidades",
+    url: "/#skills",
   },
   {
     title: "Sobre mí",
@@ -103,18 +103,37 @@ const navItems = [
     animation: nav-shadown 1s linear both;
     animation-timeline: scroll();
     animation-range: 0 100px;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.5
+    ); /* Aplica la transparencia del fondo */
   }
 
   nav {
-    @apply dark:bg-gray-800/90 bg-white/50;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo por defecto */
   }
 
   @keyframes nav-shadown {
     0% {
-      @apply dark:bg-gray-800/0 bg-white/0;
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0
+      ); /* Fondo transparente al inicio */
+      box-shadow: none; /* Sin sombra al inicio */
     }
-    to {
-      @apply shadow-lg ring-1 backdrop-blur ring-white/10;
+    100% {
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+      ); /* Fondo con transparencia al final */
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); /* Añadir sombra al final */
+      backdrop-filter: blur(10px); /* Desenfoque de fondo */
     }
   }
 </style>

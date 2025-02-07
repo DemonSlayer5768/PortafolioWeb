@@ -1,4 +1,5 @@
 import { IoPerson } from "react-icons/io5";
+const FotoAboutMe = "/images/FotoMe3.jpg";
 
 export default function AboutMe() {
   return (
@@ -44,7 +45,7 @@ export default function AboutMe() {
         <img
           width="200"
           height="200"
-          src="src\Imgs\FotoMe3.jpg"
+          src={FotoAboutMe}
           className="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
           style={{ objectPosition: "50% 50%" }}
         />

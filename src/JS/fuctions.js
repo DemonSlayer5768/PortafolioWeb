@@ -17,7 +17,7 @@ export const handleDownloadCV = () => {
   // console.log("presionado");
 
   const link = document.createElement("a");
-  link.href = "../src/files/JONATHAN-CV.pdf";
+  link.href = "/files/JONATHAN-CV.pdf";
   link.download = "CV_Jonathan.pdf";
   link.click();
 };
