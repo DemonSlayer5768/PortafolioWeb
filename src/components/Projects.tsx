@@ -43,11 +43,11 @@ const TAGS = {
 };
 const PROJECTS = [
   {
-    title: "Pagina Web Streaming",
+    title: "CineFlare Streaming",
     description:
       "Proyecto de una página web de streaming de películas y series, con un diseño moderno y atractivo. " +
       "Desarrollado con Next.js y Tailwind CSS." +
-      "para el BackEnd se utilizo JavaScrip y para la base de datos use MySQL.",
+      "para el BackEnd se utilizo JavaScript y para la base de datos use MySQL.",
     github: "https://github.com/DemonSlayer5768/ProyectoWeb",
     projectKey: "itemsImgsProyect1",
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.JAVASCRIPT],
